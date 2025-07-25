@@ -16,6 +16,13 @@
     font-style: normal;
 }
 
+main {
+    background-image: url('../img/faintfoodbackground.jpeg');
+    width: 100%;
+    background-position: cover;
+    padding-bottom: 3rem;
+}
+
 .nav-bar {
     display: flex;
     align-items: center;
@@ -74,6 +81,7 @@ header {
 
 .hero-header h2 {
     font-size: 3rem;
+    max-width: 700px;
 }
 
 button {
@@ -81,6 +89,7 @@ button {
     background-color: rgb(250, 109, 84);
     padding: 1rem;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .redirection {
@@ -97,7 +106,6 @@ button {
     background-size: 100% 100%;
     height: 370px;
     width: 25vw;
-    margin: auto;
     border-radius: 20px 0px 20px 0px;
 }
 
@@ -120,6 +128,8 @@ button {
     align-items: center;
 }
 
+
+
 .comfort-paragraph {
     color: #123456;
 }
@@ -137,8 +147,7 @@ button {
 }
 
 .section-three-div {
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 
 .first-translate {
@@ -150,6 +159,13 @@ button {
     transform: translate(0px, -70px);
 }
 
+.section-four {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .section-four-img {
     background-image: url('../img/victoryaimage1.jpg');
     height: 300px;
@@ -157,6 +173,10 @@ button {
     background-size: 100% 100%;
     border-radius: 10px;
 
+}
+
+.section-four-div p {
+    padding: 0.5em;
 }
 
 .section-four-div {
@@ -175,7 +195,7 @@ button {
 }
 
 .section-five-paragraph {
-    color: rgb(92, 87, 87);
+    color: #1d1b1b;
 }
 
 img {
@@ -189,7 +209,8 @@ img {
     height: 300px;
     width: 300px;
     background-size: 100% 100%;
-    border-radius: 15px
+    border-radius: 15px;
+
 }
 
 .upload-two {
@@ -197,7 +218,8 @@ img {
     height: 300px;
     width: 300px;
     background-size: 100% 100%;
-    border-radius: 15px
+    border-radius: 15px;
+
 }
 
 .upload-three {
@@ -205,7 +227,8 @@ img {
     height: 300px;
     width: 300px;
     background-size: 100% 100%;
-    border-radius: 15px
+    border-radius: 15px;
+
 }
 
 .upload-four {
@@ -213,7 +236,8 @@ img {
     height: 300px;
     width: 300px;
     background-size: 100% 100%;
-    border-radius: 15px
+    border-radius: 15px;
+
 }
 
 .upload-five {
@@ -221,7 +245,8 @@ img {
     height: 300px;
     width: 300px;
     background-size: 100% 100%;
-    border-radius: 15px
+    border-radius: 15px;
+
 }
 
 .upload-six {
@@ -229,7 +254,8 @@ img {
     height: 300px;
     width: 300px;
     background-size: 100% 100%;
-    border-radius: 15px
+    border-radius: 15px;
+
 }
 
 .image-upload-list-one {
@@ -237,8 +263,8 @@ img {
     justify-content: center;
     align-items: center;
     gap: 20PX;
-    /* border-radius: 15px; */
 }
+
 
 
 
@@ -251,8 +277,7 @@ img {
 
 
 .section-six {
-    display: flex;
-    gap: 15px;
+
     margin-bottom: 150px;
 }
 
@@ -291,6 +316,9 @@ img {
 /* This is for section seven! */
 .section-seven {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .updates-hd {
@@ -389,11 +417,19 @@ input {
     transition: transform 0.3s ease-in-out;
 }
 
+.exploration-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 
 @media (max-width: 1000px) {
     header {
-        height: 80vh;
+        height: 90vh;
     }
+
 
     .hero-header {
         margin-top: 6rem;
@@ -401,6 +437,7 @@ input {
 
     .hero-header h2 {
         font-size: 2em;
+        max-width: 500px;
     }
 
     /* This is for section one */
@@ -410,15 +447,41 @@ input {
         justify-content: center;
     }
 
+    .section-one-img {
+        width: 50vw;
+    }
 
-    .section-three-div {
-        display: none;
+    .section-two-img {
+        width: 100%;
+
+    }
+
+    
+
+    .container-latest {
+        padding: 1rem 1rem;
+        width: 80%;
+        margin: 0.5rem;
+    }
+
+    .updates-hd {
+        font-size: 19px;
+    }
+
+    .section-seven-button {
+        padding: 0.5rem 1rem;
+    }
+
+    input {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 800px) {
     header {
         position: relative;
+
     }
 
     .navbar-list.active {
@@ -450,15 +513,16 @@ input {
         color: #a5a5a5;
     }
 
-    .image-upload-list-one {
-        flex-direction: column;
+    .section-four-div h1 {
+        font-size: 1.5rem;
     }
 
-    
-
+    .section-four-div p {
+        font-size: 0.9rem;
+    }
 
     .section-six {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
     }
@@ -475,9 +539,13 @@ input {
     .nav-bar {
         justify-content: space-between;
     }
-}
 
-@media (max-width: 800px) {
+    .exploration-div {
+        display: flex;
+        justify-content: center;
+    }
+
+
     .footer-div {
         flex-direction: column;
         align-items: center;
@@ -496,5 +564,49 @@ input {
     .footer-links a {
         margin-right: 0px;
         margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .image-upload-list-one {
+        flex-direction: column;
+
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    .hero-header h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .hero-header {
+        margin-top: 1rem;
+    }
+
+    .hero-header p {
+        font-size: 0.9rem;
+    }
+
+    .section-one-img {
+        width: 70vw;
+    }
+
+    .section-one p,
+    .section-two p,
+    .section-five-paragraph {
+        font-size: 0.8rem;
+    }
+
+    .section-four-div h1 {
+        font-size: 1.1rem;
+    }
+
+    .section-four-div p {
+        font-size: 0.7rem;
+
     }
 }
