@@ -17,7 +17,9 @@
 }
 
 main {
-    background-image: url('../img/faintfoodbackground.jpeg');
+    /* background-image: url('../img/faintfoodbackground.jpeg');
+    background-color: rgb(29, 29, 29);
+    background-blend-mode: overlay; */
     width: 100%;
     background-position: cover;
     padding-bottom: 3rem;
@@ -65,10 +67,17 @@ ul li a:hover {
 
 header {
     background-image: url('../img/victoryaimage1.jpg');
+    background-color: rgb(56, 55, 55);
+    background-blend-mode: overlay;
     height: 100vh;
     background-size: 100% 100%;
 }
-
+.good{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
 .container {
     width: 85%;
     margin: auto;
@@ -108,7 +117,9 @@ button {
     width: 25vw;
     border-radius: 20px 0px 20px 0px;
 }
-
+.here, .step{
+    /* color: #fff; */
+}
 .section-two-img {
     width: 50vw;
     padding-top: 30px;
@@ -131,7 +142,7 @@ button {
 
 
 .comfort-paragraph {
-    color: #123456;
+    color: #1479df;
 }
 
 .three-img-one {
@@ -148,7 +159,7 @@ button {
 
 .section-three-div {
     display: none;
-}
+} 
 
 .first-translate {
     transform: translate(80px, 0px);
@@ -168,6 +179,8 @@ button {
 
 .section-four-img {
     background-image: url('../img/victoryaimage1.jpg');
+    background-color: rgb(68, 67, 67);
+    background-blend-mode: overlay;
     height: 300px;
     width: 80vw;
     background-size: 100% 100%;
@@ -187,7 +200,8 @@ button {
 
 .exploration {
     text-align: center;
-    color: #123456
+        color: #1479df;
+
 }
 
 .section-five-paragraph {
@@ -195,7 +209,7 @@ button {
 }
 
 .section-five-paragraph {
-    color: #1d1b1b;
+    color: #fff;
 }
 
 img {
@@ -270,7 +284,7 @@ img {
 
 .exploration-two {
     /* align-items: center; */
-    color: #123456;
+        color: #1479df;
     text-align: center;
 }
 
@@ -323,7 +337,7 @@ img {
 
 .updates-hd {
     text-align: center;
-    color: #123456;
+        color: #1479df;
     margin-bottom: 2rem;
 }
 
@@ -357,10 +371,13 @@ input {
     font-size: 1.1rem;
     border-radius: 0px 10px 10px 0px;
 }
-
+.put{
+    border: 2px solid grey;
+}
 .container-latest {
     padding: 2rem 3rem;
     box-shadow: 3px 4px 10px rgba(133, 132, 132, 0.8);
+    background-color: #fff;
     border-radius: 5px;
     margin: auto;
     width: 60%;
